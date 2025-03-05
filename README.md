@@ -1,3 +1,5 @@
+copy this whole thing and post it in Copilot!!
+
 # Enhanced-CandyAI-(FULL)-txt-or-img-2-video
 ============================================HOW TO INSTALL: 
 create the project structure:
