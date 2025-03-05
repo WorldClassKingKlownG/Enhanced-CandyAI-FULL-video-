@@ -1,0 +1,26 @@
+class EnhancedCandyAI(nn.Module):
+    def __init__(self, config):
+        super().__init__()
+        # Previous initializations...
+        
+        # Add Ideogram-inspired features
+        self.reality_processor = RealityProcessor(config)
+        self.ideogram_features = IdeogramFeatures()
+        
+    def generate_realistic_candy(self, prompt, reality_settings=None):
+        # Generate base image
+        base_image = self.generate_candy_image(prompt)
+        
+        # Apply reality enhancements
+        enhanced_image = self.reality_processor(base_image)
+        
+        # Apply photorealistic features
+        final_image = self.apply_ideogram_features(enhanced_image)
+        
+        return final_image
+    
+    def apply_ideogram_features(self, image):
+        image = self.apply_photorealistic_settings(image)
+        image = self.apply_composition_rules(image)
+        image = self.enhance_details(image)
+        return image
