@@ -1,0 +1,14 @@
+@dataclass
+class RealityEnhancementConfig:
+    detail_level: float = 1.8
+    texture_quality: float = 1.6
+    lighting_complexity: float = 1.7
+    material_accuracy: float = 1.5
+    environmental_awareness: float = 1.4
+    
+    composition_settings: Dict[str, bool] = field(default_factory=lambda: {
+        "golden_ratio": True,
+        "depth_mapping": True,
+        "perspective_correction": True,
+        "spatial_coherence": True
+    })
